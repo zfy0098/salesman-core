@@ -2,10 +2,12 @@ package com.rhjf.salesman.core.util;
 
 import net.sf.json.JSONObject;
 
+import javax.servlet.http.HttpServletRequest;
 import java.lang.reflect.Field;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
-
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 public class UtilsConstant {
@@ -176,5 +178,52 @@ public class UtilsConstant {
 		}
 		return randBuffer.toString();
 	}
-    
+
+
+	public static String getRequestIP(HttpServletRequest request) {
+		String ipaddr = request.getHeader("X-Real-IP");
+		if ((ipaddr == null) || (ipaddr.length() == 0) || ("unknown".equalsIgnoreCase(ipaddr))) {
+			ipaddr = request.getHeader("Proxy-Client-IP");
+		}
+		if ((ipaddr == null) || (ipaddr.length() == 0) || ("unknown".equalsIgnoreCase(ipaddr))) {
+			ipaddr = request.getHeader("WL-Proxy-Client-IP");
+		}
+		if ((ipaddr == null) || (ipaddr.length() == 0) || ("unknown".equalsIgnoreCase(ipaddr))) {
+			ipaddr = request.getHeader("X-FORWARDED-FOR");
+			if ((ipaddr != null) && (ipaddr.length() > 0) && (!"unknown".equalsIgnoreCase(ipaddr))) {
+				ipaddr = ipaddr.split(",")[0];
+			}
+		}
+		if ((ipaddr == null) || (ipaddr.length() == 0) || ("unknown".equalsIgnoreCase(ipaddr))) {
+			ipaddr = request.getRemoteAddr();
+		}
+		return ipaddr.equals("0:0:0:0:0:0:0:1") ? "127.0.0.1" : ipaddr;
+	}
+
+
+
+	public static  boolean checkMerchantName(String merchantName){
+
+		if(merchantName.length() < 5 || merchantName.length() > 12){
+			return true;
+		}
+
+		Pattern pattern = Pattern.compile("[0-9]*");
+		Matcher isNum = pattern.matcher(merchantName);
+		if (isNum.matches()) {
+			return true;
+		}
+
+		if(merchantName.matches("[a-zA-Z]*")){
+			return true;
+		}
+
+		Pattern p = Pattern.compile("[\u4e00-\u9fa5]+");
+		Matcher m = p.matcher(merchantName);
+		if (!m.find()){
+			return true;
+		}
+		return false;
+	}
+
 }

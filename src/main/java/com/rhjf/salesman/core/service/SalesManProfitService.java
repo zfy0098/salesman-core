@@ -12,22 +12,15 @@ import com.rhjf.account.modle.domain.salesman.ParamterData;
 public interface SalesManProfitService {
 
 
+
+
     /**
-     *   业务员查询收益总和
+     *   查询收益明细
      * @param user
      * @param paramter
      * @return
      */
-    public ParamterData profitTotal(LoginUser user , ParamterData paramter);
-
-
-    /**
-     *   查询收益明细  显示当日
-     * @param user
-     * @param paramter
-     * @return
-     */
-    public ParamterData profitDetailByToDay(LoginUser user , ParamterData paramter);
+    public ParamterData profitDetailByDay(LoginUser user , ParamterData paramter);
 
 
 

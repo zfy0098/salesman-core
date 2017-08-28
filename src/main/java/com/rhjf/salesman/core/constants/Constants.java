@@ -42,9 +42,9 @@ public class Constants {
 
 
     /**  短信验证码参数 ***/
-    public static final String ZhuCe = "151603";
+    public static final String ZhuCe = "";
 
-    public static final String SMSCODEAPPID = "8aaf070857acf7a70157bd35887111a4";
+    public static final String SMSCODEAPPID = "";
 
 
 
