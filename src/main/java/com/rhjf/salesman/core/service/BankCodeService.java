@@ -8,5 +8,10 @@ import com.rhjf.account.modle.domain.salesman.ParamterData;
 public interface BankCodeService {
 
 
+    /**
+     *   获取支行名称列表
+     * @param paramterData
+     * @return
+     */
     public ParamterData bankBranchList(ParamterData paramterData);
 }

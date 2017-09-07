@@ -4,7 +4,7 @@ public class RespCode {
 
 	public static final String[] SUCCESS = {"00", "请求成功"};
 	
-	public static final String[] userDoesNotExist = {"E000" , "账号或密码错误，请从新输入"};
+	public static final String[] userDoesNotExist = {"E000" , "账号或密码错误，请重新输入"};
 	
 	public static final String[] ParamsError = {"E001" , "参数错误"};
 	
@@ -14,7 +14,7 @@ public class RespCode {
 	
 	public static final String[] RegisterError = {"E004" , "注册失败,该账号已经存在"};
 	
-	public static final String[] PasswordError = {"E005"  ,  "账号或密码错误，请从新输入"};
+	public static final String[] PasswordError = {"E005"  ,  "账号或密码错误，请重新输入"};
 	
 	public static final String[] IMGSAVEError = {"E006" , "照片保存失败"};
 	
@@ -44,15 +44,13 @@ public class RespCode {
 
 	public static final String[] EditMerchantLevelError3 = {"E018" , "30天内只允许修改一次会员等级"};
 
-	public static final String[] PermissionDeniedError = {"E018" , "您无权执行次操作"};
+	public static final String[] PermissionDeniedError = {"E018" , "您无权执行此操作"};
 
 	public static final String[] BindedErrir = {"E019" , "用户只能绑定自己代理商申请的固定码"};
 
 	public static final String[] NETWORKError = {"E020" , "网络异常"};
 
 	public static final String[] MerchantNameError = {"E021" , "商户名不和法，长度大于5位，并且小于12位；名称不能使用数字和英文"};
-
-
 
 	public static final String[] TXAMOUNTError = {"T001" , "提现金额无效"};
 	

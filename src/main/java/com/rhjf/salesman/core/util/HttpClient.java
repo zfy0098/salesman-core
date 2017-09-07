@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -68,15 +67,13 @@ public class HttpClient {
                 httppost.setEntity(rsqentity);
             }
         }
-        HttpResponse rsp = null;
 
         Long startTime = System.currentTimeMillis();
 
         log.info("=======================开始发送http请求:" + startTime);
 
-        rsp = httpClient.execute(httppost);
+        HttpResponse rsp = httpClient.execute(httppost);
 
-        System.out.println(rsp.getStatusLine().getStatusCode());
         StringBuffer result = new StringBuffer();
         if (rsp != null) {
             HttpEntity entity = rsp.getEntity();

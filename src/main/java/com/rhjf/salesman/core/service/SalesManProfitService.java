@@ -31,14 +31,6 @@ public interface SalesManProfitService {
     public ParamterData profitDetailByToDayCurve(LoginUser user,ParamterData paramter);
 
 
-    /**
-     *     显示分润可提现余额
-     * @param user
-     * @param paramterData
-     * @return
-     */
-    public ParamterData profitIncomeBalance(LoginUser user,ParamterData paramterData);
-
 
     /**
      *  月报收益

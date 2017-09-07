@@ -16,6 +16,11 @@ public interface SmsApplyService {
     public ParamterData send(ParamterData repData);
 
 
+    /**
+     *   验证短信验证码
+     * @param paramterData
+     * @return
+     */
     public ParamterData verificationSMSCode(ParamterData paramterData);
 
 }

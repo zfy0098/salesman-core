@@ -30,16 +30,16 @@ public class Constants {
     public static final String DBINITKEY = "22222222222222222222222222222222";
 
 
-    public static final String myQRCodeURL = "http://app.ronghuijinfubj.com/appserver/register/register.jsp?tgr=";
+    public static final String myQRCodeURL = "";
 
+    /** 关于我们 地址 **/
+    public static final String aboutURL = "";
 
-    public static final String aboutURL = "http://app.ronghuijinfubj.com/web/public/salesman/about/about.html";
-
-
+    /** 服务器图片存放路径  **/
     public static final String imgPath = "/web/";
 
-    public static final String imgUrl = "http://app.ronghuijinfubj.com/web/";
-
+    /** 图片访问url **/
+    public static final String imgUrl = "";
 
     /**  短信验证码参数 ***/
     public static final String ZhuCe = "";
@@ -52,20 +52,19 @@ public class Constants {
     /***************************  新平台   参数 ***************************************/
 
     /** 爱码付秘钥 **/
-    public static final String REPORT_CHANNELNO = "8934238750";
+    public static final String REPORT_CHANNELNO = "";
 
-    public static final String REPORT_CHANNELNAME = "爱码付加强版";
+    public static final String REPORT_CHANNELNAME = "";
 
-    public static final String REPORT_DES3_KEY = "212876ea28cc11e7b8590894";
+    public static final String REPORT_DES3_KEY = "";
 
-    public static final String REPORT_SIGN_KEY = "212876ea28cc11e7b8590894ef29bfa8";
+    public static final String REPORT_SIGN_KEY = "";
 
-    public static final String REPORT_QUERY_KEY = "212876ea28cc11e7b8590894ef29bfa8";
+    public static final String REPORT_QUERY_KEY = "";
 
 
     /** 新平台入网请求地址 **/
-//    public static final String REPORT_URL = "http://10.10.20.101:11024/middlepayportal/merchant/in";
-    public static final String REPORT_URL = "http://portal.ronghuijinfubj.com/middlepayportal/merchant/in";
+    public static final String REPORT_URL = "http://10.10.20.101:11024/middlepayportal/merchant/in";
 
 
     public static final Integer[]  wxMCCType = {203,2,3,204,205,206,207,208,6,9,19,266,267,268,269,271,272,284,310,315,13,270,90,273,289,311,312,

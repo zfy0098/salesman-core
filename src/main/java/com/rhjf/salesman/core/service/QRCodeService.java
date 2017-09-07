@@ -9,5 +9,11 @@ import com.rhjf.account.modle.domain.salesman.ParamterData;
 public interface QRCodeService {
 
 
+    /**
+     *   绑定固定码
+     * @param user
+     * @param paramter
+     * @return
+     */
     public ParamterData BindedYMF(LoginUser user , ParamterData paramter);
 }
