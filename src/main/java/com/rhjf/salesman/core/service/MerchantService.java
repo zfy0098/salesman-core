@@ -2,10 +2,6 @@ package com.rhjf.salesman.core.service;
 
 import com.rhjf.account.modle.domain.salesman.LoginUser;
 import com.rhjf.account.modle.domain.salesman.ParamterData;
-import org.apache.zookeeper.Login;
-import sun.rmi.runtime.Log;
-
-import java.awt.print.PrinterAbortException;
 
 /**
  * Created by hadoop on 2017/8/11.

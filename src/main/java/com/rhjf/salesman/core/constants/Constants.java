@@ -22,7 +22,6 @@ public class Constants {
     /** 入网商户 默认登录密码  **/
     public static final String defaultLoginPWD = "14343D3E8BB94A580D1A5DA418A4A030";
 
-
     public static final String initKey = "AB123CD564ABE85FDB42342364ABE85F";
 
     public static final String protectINDEX = "3F27D9CB903EA24EF74E2F7E6D97D63E";
@@ -30,41 +29,6 @@ public class Constants {
     public static final String DBINITKEY = "22222222222222222222222222222222";
 
 
-    public static final String myQRCodeURL = "";
-
-    /** 关于我们 地址 **/
-    public static final String aboutURL = "";
-
-    /** 服务器图片存放路径  **/
-    public static final String imgPath = "/web/";
-
-    /** 图片访问url **/
-    public static final String imgUrl = "";
-
-    /**  短信验证码参数 ***/
-    public static final String ZhuCe = "";
-
-    public static final String SMSCODEAPPID = "";
-
-
-
-
-    /***************************  新平台   参数 ***************************************/
-
-    /** 爱码付秘钥 **/
-    public static final String REPORT_CHANNELNO = "";
-
-    public static final String REPORT_CHANNELNAME = "";
-
-    public static final String REPORT_DES3_KEY = "";
-
-    public static final String REPORT_SIGN_KEY = "";
-
-    public static final String REPORT_QUERY_KEY = "";
-
-
-    /** 新平台入网请求地址 **/
-    public static final String REPORT_URL = "http://10.10.20.101:11024/middlepayportal/merchant/in";
 
 
     public static final Integer[]  wxMCCType = {203,2,3,204,205,206,207,208,6,9,19,266,267,268,269,271,272,284,310,315,13,270,90,273,289,311,312,
